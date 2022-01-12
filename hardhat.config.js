@@ -2,12 +2,11 @@ require('@nomiclabs/hardhat-ethers');
 require('@nomiclabs/hardhat-waffle');
 require('@nomiclabs/hardhat-web3');
 require('@nomiclabs/hardhat-truffle5');
+require('@openzeppelin/hardhat-upgrades');
 require('solidity-coverage');
 require('hardhat-gas-reporter');
 require('hardhat-contract-sizer');
 require('hardhat-deploy');
-require('./tasks/accounts');
-require('./tasks/balance');
 require('dotenv').config();
 
 const MNEMONIC = process.env.MNEMONIC;
@@ -54,7 +53,7 @@ module.exports = {
     timeout: 999999,
   },
   upgradeable: {
-    uups: ['ReservesManager', 'ReserveMarketplace', 'ProtocolParameters'],
+    uups: ['MyToken'],
   },
   solidity: {
     compilers: [

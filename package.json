@@ -10,6 +10,7 @@
     "@nomiclabs/hardhat-truffle5": "^2.0.1",
     "@nomiclabs/hardhat-web3": "^2.0.0",
     "@openzeppelin/contracts-upgradeable": "^4.4.0",
+    "@openzeppelin/hardhat-upgrades": "^1.12.1",
     "@openzeppelin/test-helpers": "^0.5.13",
     "chai": "^4.3.4",
     "chai-bignumber": "^3.0.0",
